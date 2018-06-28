@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  font-size: 16px;
+  font-family: 'Crimson Text', serif;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-title {
+  height: 70px;
+  background-color: #2d3945;
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.header-title {
+  max-width: 768px;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 5px solid #2d3945;
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.header-title h2 {
+  font-weight: bold;
+  color: #2d3945;
+}
+
+.header-title h3 {
+  font-weight: lighter;
+  color: #bec2c5;
+}
