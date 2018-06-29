@@ -6,6 +6,7 @@
 
 body {
   min-width: 320px;
+  max-width: 768px;
   font-size: 16px;
   font-family: 'Crimson Text', serif;
   margin: 0 auto;
@@ -15,6 +16,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
+  border-bottom: 5px solid #2d3945;
 }
 
 .logo-title {
@@ -28,12 +31,8 @@ header {
 }
 
 .header-title {
-  max-width: 768px;
   text-align: center;
   padding: 30px 0;
-  border-bottom: 5px solid #2d3945;
-  min-width: 320px;
-  max-width: 768px;
   margin: 0 auto;
 }
 
@@ -45,4 +44,74 @@ header {
 .header-title h3 {
   font-weight: lighter;
   color: #bec2c5;
+}
+
+.contact_information {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  border-top: 3px solid #2d3945;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+legend {
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: 'Crimson Text', serif;
+  color: #2d3945;
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.in_field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.in_field:not(label) {
+  flex-direction: column;
+  width: 90%;
+}
+
+.in_field label {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1em;
+  color: #7a7d7d;
+}
+
+.in_field input {
+  border-radius: 2px;
+  border: 0px solid;
+  background-color: #e9eff1;
+  padding: 10px 20px;
+  margin: 8px 0;
+
+}
+
+.in_field input[placeholder] {
+  text-align: right;
+  font-style: italic;
+}
+
+.in_field input[placeholder]:focus {
+  text-align: left;
+  
+}
+
+.in_field select {
+  border: 0px solid;
+  background-color: #e9eff1;
+  padding: 10px 20px;
+  margin: 8px 0;
 }
