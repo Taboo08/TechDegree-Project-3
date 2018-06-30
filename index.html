@@ -15,7 +15,6 @@
         <h3>Get the latest news on how your code is doing right in your inbox</h3>
       </div>
     </header>
-    <!-- <hr> -->
     <form action="index.html" method="post" class="contact_information">
       <fieldset>
         <legend>Contact Information</legend>
@@ -86,18 +85,22 @@
             <option value="DC">District of Columbia</option>
           </select>
           <label for="zipcode">Zip Code</label>
-          <input type="text" id="zipcode" name="user_zipcode">
+          <input type="text" id="zipcode" name="user_zipcode" maxlength="5">
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fds_bottom">
         <legend>Newsletter</legend>
-        <label>Select the newsletters you would like to receive</label>
-        <input type="checkbox" id="newsletter_options" name="newsletter_options"><label for="newsletter_options">HTML News</label>
-        <input type="checkbox" id="newsletter_options" name="newsletter_options"><label for="newsletter_options">CSS News</label>
-        <input type="checkbox" id="newsletter_options" name="newsletter_options"><label for="newsletter_options">JavaScript News</label>
-        <label>Newsletter Format</label>
-        <input type="radio" id="newsletter_format" name="newsletter_format"><label for="newsletter_format">HTML</label>
-        <input type="radio" id="newsletter_format" name="newsletter_format"><label for="newsletter_format">Plain text</label>
+        <div class="cb_newsletter">
+          <label>Select the newsletters you would like to receive</label>
+          <div class="chb_options">
+            <input type="checkbox" id="html_news" name="newsletter_options"><label for="html_news">HTML News</label>
+            <input type="checkbox" id="css_news" name="newsletter_options"><label for="css_news">CSS News</label>
+            <input type="checkbox" id="javascript_news" name="newsletter_options"><label for="javascript_news">JavaScript News</label>
+          </div>
+        </div>
+          <label>Newsletter Format</label>
+          <input type="radio" id="newsletter_format" name="newsletter_format"><label for="newsletter_format">HTML</label>
+          <input type="radio" id="newsletter_format" name="newsletter_format"><label for="newsletter_format">Plain text</label>
       </fieldset>
       <fieldset>
         <label for="other_topics">Other topics you'd like to hear about</label>

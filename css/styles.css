@@ -58,7 +58,7 @@ header {
 fieldset {
   border: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -106,7 +106,7 @@ legend {
 
 .in_field input[placeholder]:focus {
   text-align: left;
-  
+
 }
 
 .in_field select {
@@ -115,3 +115,31 @@ legend {
   padding: 10px 20px;
   margin: 8px 0;
 }
+
+.in_field #zipcode {
+  width: 40%;
+}
+
+.fds_bottom {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.fds_bottom legend {
+  margin: 0;
+}
+
+.cb_newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* .chb_options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 10px;
+} */
