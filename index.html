@@ -91,23 +91,25 @@
       <fieldset class="fds_bottom">
         <legend>Newsletter</legend>
         <div class="cb_newsletter">
-          <label>Select the newsletters you would like to receive</label>
+          <label class="semi_title">Select the newsletters you would like to receive</label>
           <div class="chb_options">
             <input type="checkbox" id="html_news" name="newsletter_options"><label for="html_news">HTML News</label>
             <input type="checkbox" id="css_news" name="newsletter_options"><label for="css_news">CSS News</label>
             <input type="checkbox" id="javascript_news" name="newsletter_options"><label for="javascript_news">JavaScript News</label>
           </div>
         </div>
-          <label>Newsletter Format</label>
-          <input type="radio" id="newsletter_format" name="newsletter_format"><label for="newsletter_format">HTML</label>
-          <input type="radio" id="newsletter_format" name="newsletter_format"><label for="newsletter_format">Plain text</label>
+          <label class="semi_title">Newsletter Format</label>
+          <div class="rad_option">
+            <input type="radio" id="newsletter_format" name="newsletter_format"><label for="newsletter_format">HTML</label>
+            <input type="radio" id="newsletter_format" name="newsletter_format"><label for="newsletter_format">Plain text</label>
+          </div>
       </fieldset>
-      <fieldset>
-        <label for="other_topics">Other topics you'd like to hear about</label>
+      <fieldset class="txt_topics">
+        <label for="other_topics" class="semi_title">Other topics you'd like to hear about</label>
         <textarea id="other_topics" name="other_topics"></textarea>
       </fieldset>
-      <button type="submit"><a href="#">Sign Up</a></button>
-      <footer>Copyright The Code Review</footer>
+      <button type="submit" class="btn"><a href="#">Sign Up</a></button>
+      <footer><p>Copyright The Code Review</p></footer>
     </form>
   </body>
 </html>
