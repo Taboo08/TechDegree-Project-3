@@ -81,6 +81,11 @@ legend {
   padding-bottom: 20px;
 }
 
+.field_rows {
+  display: flex;
+  flex-direction: column;
+}
+
 .in_field:not(label) {
   flex-direction: column;
   width: 90%;
@@ -179,6 +184,11 @@ legend {
   margin-top: 10px;
 }
 
+.txt_topics textarea:focus {
+    border: 2px solid #2d3945;
+}
+
+
 .btn {
   width: 90%;
   padding: 10px;
@@ -216,16 +226,33 @@ footer p {
 
 @media (min-width: 768px) {
 
-  /* .in_field {
+  .in_field {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
   }
 
-  .in_field label {
-    display: inline-block;
-  } */
+  .field_rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .field_rows label {
+    width: 20%;
+  }
+
+  .field_rows input {
+    width: 80%;
+  }
+
+  .field_rows #zipcode {
+    width: 100px;
+  }
+
+  .field_rows #state {
+    width: 80%;
+  }
 
   .cb_newsletter {
     display: flex;
